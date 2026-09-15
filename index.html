@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CL Expertise Technique — Direction technique &amp; sécurité multisites, à la demande</title>
+<meta name="description" content="Christian Linossier, plus de 25 ans d'expérience en direction technique et sécurité multisites. Audit, maintenance, travaux, conformité ERP : un accompagnement ponctuel, à distance ou sur site. Bruges / Bordeaux.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-900:#0A1B33;
+    --navy-800:#0F2547;
+    --navy-700:#173764;
+    --blue:#2E9BD6;
+    --blue-soft:#7FC4E8;
+    --paper:#F5F7FA;
+    --ink:#0F2137;
+    --ink-soft:#4B5C70;
+    --line:#D7E1EA;
+    --line-dark:rgba(127,196,232,0.18);
+    --max:1120px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'IBM Plex Sans', sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+  .num{font-family:'Big Shoulders',sans-serif;font-weight:700;}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(10,27,51,0.96);
+    border-bottom:1px solid var(--line-dark);
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 28px;max-width:var(--max);margin:0 auto;
+  }
+  .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;}
+  .brand svg{width:26px;height:26px;flex:none;}
+  .brand-text{line-height:1.1;}
+  .brand-text b{display:block;font-size:15px;letter-spacing:0.02em;font-weight:700;}
+  .brand-text span{display:block;font-size:10.5px;color:var(--blue-soft);letter-spacing:0.08em;}
+  nav.links{display:flex;gap:28px;align-items:center;}
+  nav.links a{color:#CBD8E6;text-decoration:none;font-size:14.5px;font-weight:500;}
+  nav.links a:hover{color:#fff;}
+  .nav-call{
+    background:var(--blue);color:#fff;padding:9px 16px;border-radius:2px;
+    font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;
+  }
+  .nav-toggle{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer;}
+  @media (max-width:860px){
+    nav.links{
+      position:absolute;top:100%;left:0;right:0;background:var(--navy-800);
+      flex-direction:column;align-items:flex-start;padding:10px 28px 22px;gap:16px;
+      display:none;border-bottom:1px solid var(--line-dark);
+    }
+    nav.links.open{display:flex;}
+    .nav-toggle{display:block;}
+    .nav-call{display:none;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;overflow:hidden;
+    background:
+      linear-gradient(180deg, rgba(10,27,51,0.55), rgba(10,27,51,0.94)),
+      repeating-linear-gradient(0deg, transparent 0 39px, var(--line-dark) 39px 40px),
+      repeating-linear-gradient(90deg, transparent 0 39px, var(--line-dark) 39px 40px),
+      var(--navy-900);
+    color:#fff;
+    padding:76px 0 64px;
+  }
+  .hero .wrap{display:grid;grid-template-columns:1.15fr 0.85fr;gap:56px;align-items:end;}
+  .eyebrow-line{display:flex;align-items:center;gap:10px;color:var(--blue-soft);font-size:13.5px;font-weight:600;margin-bottom:18px;}
+  .eyebrow-line .dash{width:26px;height:1px;background:var(--blue-soft);}
+  h1{
+    font-size:44px;line-height:1.14;font-weight:700;margin:0 0 20px;
+    max-width:620px;letter-spacing:-0.01em;
+  }
+  .hero p.lead{font-size:17px;line-height:1.65;color:#CBD8E6;max-width:520px;margin:0 0 30px;}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;padding:13px 22px;font-size:14.5px;
+    font-weight:600;text-decoration:none;border-radius:2px;border:1px solid transparent;
+  }
+  .btn-primary{background:var(--blue);color:#fff;}
+  .btn-ghost{border-color:rgba(255,255,255,0.35);color:#fff;}
+  .stat-panel{
+    border:1px solid var(--line-dark);background:rgba(255,255,255,0.03);
+    padding:26px 0 4px;
+  }
+  .stat-row{display:grid;grid-template-columns:1fr 1fr;}
+  .stat{padding:0 24px 26px;border-right:1px solid var(--line-dark);border-top:1px solid var(--line-dark);}
+  .stat:nth-child(2n){border-right:none;}
+  .stat:nth-child(1),.stat:nth-child(2){border-top:none;}
+  .stat .num{font-size:38px;color:var(--blue-soft);display:block;line-height:1;padding-top:18px;}
+  .stat .label{font-size:12.5px;color:#AEC1D4;margin-top:6px;line-height:1.4;}
+  @media (max-width:860px){
+    .hero .wrap{grid-template-columns:1fr;gap:34px;}
+    h1{font-size:33px;}
+  }
+
+  /* ---------- Section shell ---------- */
+  section{padding:76px 0;}
+  .section-head{max-width:640px;margin-bottom:44px;}
+  .section-tag{color:var(--blue);font-size:13px;font-weight:600;margin:0 0 10px;}
+  h2{font-size:30px;font-weight:700;margin:0 0 12px;letter-spacing:-0.01em;}
+  .section-head p{color:var(--ink-soft);font-size:16px;line-height:1.6;margin:0;}
+  .alt{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+
+  /* ---------- About / pillars ---------- */
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+  .about-grid p{font-size:15.5px;line-height:1.75;color:var(--ink-soft);margin:0 0 16px;}
+  .pillars{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);}
+  .pillar{background:var(--paper);padding:22px;}
+  .pillar svg{width:26px;height:26px;color:var(--blue);margin-bottom:12px;}
+  .pillar h3{font-size:15px;margin:0 0 6px;font-weight:700;}
+  .pillar p{font-size:13.5px;color:var(--ink-soft);margin:0;line-height:1.5;}
+  @media (max-width:860px){.about-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Missions (blueprint schedule) ---------- */
+  .mission-list{border-top:1px solid var(--line);}
+  .mission{
+    display:grid;grid-template-columns:70px 1fr;gap:20px;
+    padding:22px 0;border-bottom:1px solid var(--line);position:relative;
+  }
+  .mission .num{font-size:40px;color:var(--line);line-height:1;}
+  .mission h3{font-size:16.5px;font-weight:700;margin:2px 0 6px;}
+  .mission p{font-size:14px;color:var(--ink-soft);margin:0;line-height:1.55;max-width:520px;}
+  .mission-two-col{display:grid;grid-template-columns:1fr 1fr;column-gap:48px;}
+  @media (max-width:760px){.mission-two-col{grid-template-columns:1fr;}}
+
+  /* ---------- Why us ---------- */
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  .why{background:#fff;padding:26px 22px;}
+  .why svg{width:24px;height:24px;color:var(--blue);margin-bottom:14px;}
+  .why h3{font-size:15px;font-weight:700;margin:0 0 8px;}
+  .why p{font-size:13.5px;color:var(--ink-soft);line-height:1.55;margin:0;}
+  @media (max-width:860px){.why-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:520px){.why-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Timeline ---------- */
+  .timeline{border-left:1px solid var(--line);margin-left:6px;}
+  .tl-item{position:relative;padding:0 0 40px 32px;}
+  .tl-item:last-child{padding-bottom:4px;}
+  .tl-item::before{
+    content:"";position:absolute;left:-6px;top:4px;width:11px;height:11px;
+    border-radius:50%;background:var(--paper);border:2px solid var(--blue);
+  }
+  .tl-date{font-size:12.5px;color:var(--blue);font-weight:600;letter-spacing:0.02em;margin-bottom:4px;}
+  .tl-item h3{font-size:17px;margin:0 0 2px;font-weight:700;}
+  .tl-item .co{font-size:13.5px;color:var(--ink-soft);margin:0 0 10px;}
+  .tl-item ul{margin:0;padding-left:18px;color:var(--ink-soft);font-size:14px;line-height:1.6;}
+  .tl-item li{margin-bottom:4px;}
+
+  /* ---------- Chips / formation ---------- */
+  .chip-wrap{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px;}
+  .chip{
+    border:1px solid var(--line);background:#fff;padding:7px 14px;font-size:13px;
+    color:var(--ink-soft);border-radius:2px;
+  }
+  .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
+  .skills-grid h3{font-size:14px;text-transform:none;color:var(--ink);margin:0 0 14px;font-weight:700;}
+  .formation-list{list-style:none;margin:0;padding:0;font-size:14px;color:var(--ink-soft);line-height:1.7;}
+  .formation-list li{padding:10px 0;border-bottom:1px solid var(--line);}
+  .formation-list b{color:var(--ink);font-weight:600;}
+  @media (max-width:760px){.skills-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Contact ---------- */
+  .contact{background:var(--navy-900);color:#fff;}
+  .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;}
+  .contact h2{color:#fff;}
+  .contact .section-head p{color:#AEC1D4;}
+  .contact-list{list-style:none;margin:24px 0 0;padding:0;}
+  .contact-list li{display:flex;gap:14px;padding:16px 0;border-top:1px solid var(--line-dark);align-items:flex-start;}
+  .contact-list li:first-child{border-top:none;}
+  .contact-list svg{width:20px;height:20px;color:var(--blue-soft);flex:none;margin-top:2px;}
+  .contact-list a{color:#fff;text-decoration:none;font-weight:600;}
+  .contact-list .ctxt div:first-child{font-size:12.5px;color:#8FA6BE;margin-bottom:2px;}
+  .brochure{
+    border:1px solid var(--line-dark);padding:22px;display:flex;gap:16px;align-items:center;
+  }
+  .brochure img{width:80px;border:1px solid var(--line-dark);}
+  .brochure a{color:var(--blue-soft);font-weight:600;font-size:14px;text-decoration:none;}
+  .siret{font-size:12.5px;color:#7C93AC;margin-top:22px;}
+
+  footer{background:var(--navy-900);color:#7C93AC;padding:22px 0;border-top:1px solid var(--line-dark);font-size:13px;}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+  footer a{color:#7C93AC;text-decoration:none;}
+  footer a:hover{color:#fff;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12L12 4l9 8"/><path d="M6 11v8h12v-8"/></svg>
+      <span class="brand-text"><b>CL EXPERTISE TECHNIQUE</b><span>MAINTENANCE · SÉCURITÉ · RÉNOVATION</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    <nav class="links" id="navLinks">
+      <a href="#profil">Profil</a>
+      <a href="#prestations">Prestations</a>
+      <a href="#pourquoi">Pourquoi nous</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-call" href="tel:+33664807363">06 64 80 73 63</a>
+  </div>
+</header>
+
+<div id="top"></div>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow-line"><span class="dash"></span>Direction technique &amp; sécurité multisites</div>
+      <h1>Votre expertise technique externalisée, à la demande.</h1>
+      <p class="lead">Un accompagnement ponctuel, à distance ou sur site, pour sécuriser vos décisions, optimiser vos coûts et améliorer la performance de vos établissements.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+33664807363">Appeler le 06 64 80 73 63</a>
+        <a class="btn btn-ghost" href="#prestations">Voir les 15 prestations</a>
+      </div>
+    </div>
+    <div class="stat-panel">
+      <div class="stat-row">
+        <div class="stat"><span class="num">25+</span><div class="label">ans d'expérience en direction technique et sécurité</div></div>
+        <div class="stat"><span class="num">14</span><div class="label">résidences pilotées depuis le siège de Bruges</div></div>
+        <div class="stat"><span class="num">36</span><div class="label">sites nationaux gérés sur un précédent poste</div></div>
+        <div class="stat"><span class="num">15</span><div class="label">prestations ciblées, mobilisables à la demande</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="profil">
+  <div class="wrap">
+    <div class="about-grid">
+      <div>
+        <div class="section-tag">Profil</div>
+        <h2>25 ans à sécuriser des patrimoines multisites</h2>
+        <p>Directeur technique et sécurité avec plus de 25 ans d'expérience dans la gestion technique, immobilière et opérationnelle de patrimoines multisites. Depuis septembre 2022, je pilote les sujets techniques et sécurité d'un réseau de 14 résidences depuis le siège de Bruges.</p>
+        <p>Mon parcours couvre également l'immobilier, les services généraux, les ERP, la grande distribution et les énergies renouvelables. Habitué aux environnements complexes, je pilote maintenance, travaux, sécurité, conformité, prestataires, budgets, investissements et continuité d'exploitation — avec une forte capacité à structurer les organisations et à accompagner les directions opérationnelles.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <h3>Expertise opérationnelle</h3>
+          <p>Une connaissance de terrain construite sur des patrimoines réels, pas seulement sur des méthodes.</p>
+        </div>
+        <div class="pillar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a13 13 0 010 18a13 13 0 010-18z"/></svg>
+          <h3>Vision globale</h3>
+          <p>Maintenance, sécurité, travaux et budgets pensés ensemble, pas en silos.</p>
+        </div>
+        <div class="pillar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12a9 9 0 11-3-6.7"/><path d="M21 4v5h-5"/></svg>
+          <h3>Réactivité &amp; flexibilité</h3>
+          <p>Des missions courtes ou récurrentes, à distance ou sur site, calées sur votre rythme.</p>
+        </div>
+        <div class="pillar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c4 3 7 5.5 7 10a7 7 0 01-14 0c0-4.5 3-7 7-10z"/></svg>
+          <h3>Engagement durable</h3>
+          <p>Une attention constante à la performance énergétique et à la maîtrise des coûts.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="prestations" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">Nos 15 prestations</div>
+      <h2>Des missions ciblées et sur mesure</h2>
+      <p>Adaptées à vos besoins — d'un audit ponctuel à un pilotage technique récurrent de vos établissements.</p>
+    </div>
+    <div class="mission-list mission-two-col">
+      <div>
+        <div class="mission"><span class="num">01</span><div><h3>Audit technique à distance</h3><p>État des lieux, points faibles et recommandations.</p></div></div>
+        <div class="mission"><span class="num">02</span><div><h3>Audit sécurité &amp; conformité ERP</h3><p>Analyse des obligations, contrôles et actions prioritaires.</p></div></div>
+        <div class="mission"><span class="num">03</span><div><h3>Diagnostic maintenance</h3><p>Analyse du préventif, curatif et des équipements.</p></div></div>
+        <div class="mission"><span class="num">04</span><div><h3>Optimisation des contrats de maintenance</h3><p>Analyse des contrats, coûts et niveaux de service.</p></div></div>
+        <div class="mission"><span class="num">05</span><div><h3>Analyse et pilotage des prestataires</h3><p>Suivi des performances, contrats et plans d'actions.</p></div></div>
+        <div class="mission"><span class="num">06</span><div><h3>Plan pluriannuel de travaux</h3><p>Priorisation des travaux, investissements et budgets.</p></div></div>
+        <div class="mission"><span class="num">07</span><div><h3>Analyse technique des devis</h3><p>Comparaison des offres et aide à la décision.</p></div></div>
+        <div class="mission" style="border-bottom:none;"><span class="num">08</span><div><h3>Rédaction de cahiers des charges techniques</h3><p>CCTP, prestations de maintenance ou travaux.</p></div></div>
+      </div>
+      <div>
+        <div class="mission"><span class="num">09</span><div><h3>Assistance au suivi de travaux</h3><p>Pilotage et coordination à distance des différentes étapes.</p></div></div>
+        <div class="mission"><span class="num">10</span><div><h3>Tableau de bord technique multisites</h3><p>Maintenance, sécurité, travaux, budgets et indicateurs.</p></div></div>
+        <div class="mission"><span class="num">11</span><div><h3>Optimisation des consommations énergétiques</h3><p>Analyse des consommations et recherche d'économies.</p></div></div>
+        <div class="mission"><span class="num">12</span><div><h3>Gestion documentaire technique</h3><p>Contrats, contrôles réglementaires, plans et procédures.</p></div></div>
+        <div class="mission"><span class="num">13</span><div><h3>Préparation aux contrôles réglementaires</h3><p>Vérification des documents et plan d'actions.</p></div></div>
+        <div class="mission"><span class="num">14</span><div><h3>Assistance à la gestion des sinistres</h3><p>Analyse, coordination experts / assureurs / entreprises et suivi.</p></div></div>
+        <div class="mission" style="border-bottom:none;"><span class="num">15</span><div><h3>Conseil technique multisites à la demande</h3><p>Appui ponctuel aux directions : 1 à quelques heures par semaine ou par mois.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pourquoi">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">Pourquoi choisir CL Expertise Technique</div>
+      <h2>Un partenaire technique en toute confiance</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        <h3>Une expérience solide</h3>
+        <p>Plus de 25 ans d'expérience en direction technique, sécurité et gestion de patrimoines multisites.</p>
+      </div>
+      <div class="why">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 17l5-10 5 6 3-4 3 8"/></svg>
+        <h3>Une grande flexibilité</h3>
+        <p>Des missions courtes, ciblées, à distance ou sur site, selon vos besoins.</p>
+      </div>
+      <div class="why">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 12l4 4 8-9"/><path d="M4 12l4 4"/></svg>
+        <h3>Une approche pragmatique</h3>
+        <p>Des solutions concrètes et opérationnelles, rapidement déployables.</p>
+      </div>
+      <div class="why">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c4 3 7 5.5 7 10a7 7 0 01-14 0c0-4.5 3-7 7-10z"/></svg>
+        <h3>Une vision durable</h3>
+        <p>Des actions pour la performance énergétique et la maîtrise des coûts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="parcours" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">Parcours</div>
+      <h2>Un parcours construit sur le terrain</h2>
+      <p>Immobilier, ERP, grande distribution, énergies renouvelables : des environnements exigeants et complémentaires.</p>
+    </div>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-date">09/2022 — Aujourd'hui</div>
+        <h3>Directeur technique &amp; sécurité</h3>
+        <p class="co">Mer &amp; Golf Appart-Hôtel / Séfiso Aquitaine — Bruges</p>
+        <ul>
+          <li>Pilotage technique et sécurité d'un réseau de 14 résidences de tourisme.</li>
+          <li>Conformité ERP et sécurité incendie, contrôles périodiques, plans d'actions.</li>
+          <li>Coordination des sinistres, experts et assureurs jusqu'à la remise en exploitation.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">01/2013 — 09/2022</div>
+        <h3>Directeur parc immobilier / services généraux</h3>
+        <p class="co">CGL — Bègles</p>
+        <ul>
+          <li>Immobilier et services généraux d'un patrimoine de 36 sites nationaux.</li>
+          <li>Responsable SSE : certifications MASE et ISO 45001, conseiller sécurité TMD.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">03/2011 — 01/2013</div>
+        <h3>Gestionnaire technique immobilier</h3>
+        <p class="co">BNP Paribas Real Estate — Toulouse</p>
+        <ul>
+          <li>Gestion technique d'un patrimoine de 38 bâtiments : bureaux, entrepôts et ERP.</li>
+          <li>Appels d'offres, contrats, budgets de maintenance et conformité réglementaire.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">08/2010 — 02/2011</div>
+        <h3>Directeur technique — énergies renouvelables</h3>
+        <p class="co">Oxygen Outremer — Les Abymes</p>
+        <ul>
+          <li>Pilotage de projets de la prospection à la réalisation, en MOA et MOE.</li>
+          <li>Études de faisabilité, appels d'offres, relations avec collectivités et administrations.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">11/2007 — 08/2010</div>
+        <h3>Responsable exploitation technique immobilier</h3>
+        <p class="co">Immochan — Bordeaux</p>
+        <ul>
+          <li>Création et déploiement d'un service technique immobilier.</li>
+          <li>Plan patrimonial à 5 ans, contrats d'entretien, sécurité et budgets.</li>
+        </ul>
+      </div>
+      <div class="tl-item">
+        <div class="tl-date">10/1999 — 10/2007</div>
+        <h3>Responsable technique et sécurité hypermarchés</h3>
+        <p class="co">Carrefour — Chasse-sur-Rhône / Orange</p>
+        <ul>
+          <li>Management d'équipes techniques, maintenance préventive et curative.</li>
+          <li>Budgets d'exploitation et relations avec organismes réglementaires et services de secours.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="expertises">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-tag">Expertises &amp; formation</div>
+      <h2>Compétences clés et certifications</h2>
+    </div>
+    <div class="skills-grid">
+      <div>
+        <h3>Expertises clés</h3>
+        <div class="chip-wrap">
+          <span class="chip">Direction technique multisites</span>
+          <span class="chip">Sécurité &amp; conformité réglementaire</span>
+          <span class="chip">Maintenance &amp; patrimoine</span>
+          <span class="chip">CAPEX / travaux / rénovation</span>
+          <span class="chip">Contrats &amp; prestataires</span>
+          <span class="chip">GMAO / GTB / GTC</span>
+          <span class="chip">Management hiérarchique &amp; transverse</span>
+          <span class="chip">Énergie &amp; transition énergétique</span>
+          <span class="chip">Sinistres &amp; assurances</span>
+          <span class="chip">Budgets d'exploitation &amp; investissements</span>
+        </div>
+        <h3 style="margin-top:32px;">Habilitations &amp; certifications</h3>
+        <div class="chip-wrap">
+          <span class="chip">Habilitation électrique H2B2V-BC</span>
+          <span class="chip">Sécurité incendie ERP 1</span>
+          <span class="chip">SST</span>
+          <span class="chip">Conseiller à la sécurité TMD</span>
+          <span class="chip">Formateur à la conduite d'engins</span>
+          <span class="chip">NFC 15-100</span>
+          <span class="chip">Anglais technique</span>
+        </div>
+      </div>
+      <div>
+        <h3>Formation</h3>
+        <ul class="formation-list">
+          <li><b>DUT Génie Électrique et Informatique Industrielle</b><br>IUT Jean Monnet, Saint-Étienne — 1996</li>
+          <li><b>BTS Électrotechnique</b><br>Lycée Étienne Mimard, Saint-Étienne — 1997-1998</li>
+          <li><b>BAC STI Génie Électrotechnique</b><br>Lycée Georges Brassens, Rive-de-Gier — 1995</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div>
+      <div class="section-head">
+        <div class="section-tag" style="color:var(--blue-soft);">Contact</div>
+        <h2>Optimisons ensemble la performance de vos sites</h2>
+        <p>Un audit à distance, une mission ponctuelle ou un accompagnement récurrent : parlons de vos besoins.</p>
+      </div>
+      <ul class="contact-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5c0 8.3 6.7 15 15 15l3-4-6-3-2 2c-2.5-1.2-4.8-3.5-6-6l2-2-3-6-4 0z"/></svg>
+          <div class="ctxt"><div>Téléphone</div><a href="tel:+33664807363">06 64 80 73 63</a></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M4 6l8 7 8-7"/></svg>
+          <div class="ctxt"><div>E-mail</div><a href="mailto:cl.expertise.technique@gmail.com">cl.expertise.technique@gmail.com</a></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6.6 7-11.5A7 7 0 005 9.5C5 14.4 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg>
+          <div class="ctxt"><div>Zone d'intervention</div><div style="font-weight:600;">Bruges / Bordeaux — missions à distance partout en France</div></div>
+        </li>
+      </ul>
+      <p class="siret">CL Expertise Technique — SIRET 753 487 131 00025</p>
+    </div>
+    <div>
+      <div class="brochure">
+        <img src="assets/plaquette-cl-expertise-technique.jpg" alt="Plaquette CL Expertise Technique">
+        <div>
+          <div style="font-size:12.5px;color:#8FA6BE;margin-bottom:6px;">Document</div>
+          <div style="font-weight:600;margin-bottom:8px;">Notre plaquette de présentation</div>
+          <a href="assets/plaquette-cl-expertise-technique.jpg" target="_blank" rel="noopener">Consulter / télécharger →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>CL Expertise Technique — Votre partenaire technique en toute confiance</div>
+    <div><a href="mentions-legales.html">Mentions légales</a></div>
+  </div>
+</footer>
+
+<script>
+  const t = document.getElementById('navToggle');
+  const l = document.getElementById('navLinks');
+  t.addEventListener('click', () => l.classList.toggle('open'));
+  l.querySelectorAll('a').forEach(a => a.addEventListener('click', () => l.classList.remove('open')));
+</script>
+
+</body>
+</html>
